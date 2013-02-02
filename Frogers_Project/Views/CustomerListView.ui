@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomerListView</class>
+ <widget class="QMainWindow" name="CustomerListView">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>913</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Customer List</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="numberLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Number of customers:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="customerInput">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>100</y>
+      <width>561</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="firstPageButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previousPageButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextPageButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lastPageButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="subscriptionInput">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>30</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filter by subscription:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchBar">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>30</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="searchLabel">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>40</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>913</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

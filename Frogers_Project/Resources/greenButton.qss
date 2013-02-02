@@ -1,0 +1,25 @@
+QPushButton {
+
+background: url(":/new/prefix1/loginButtonImage.png") repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}   

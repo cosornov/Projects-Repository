@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NoteView</class>
+ <widget class="QDialog" name="NoteView">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">NoteView { background: qlineargradient(spread:pad, x1:0.573909, y1:0.693, x2:0, y2:0, stop:0 rgba(176, 227, 100, 255), stop:1 rgba(255, 255, 255, 255)); }</string>
+  </property>
+  <widget class="QPushButton" name="prevButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+   </property>
+   <property name="text">
+    <string>Prev</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>160</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>210</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+   </property>
+   <property name="text">
+    <string>Add Note</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="addError">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>281</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dateLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>551</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Date:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bodyError">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>381</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bodyInput">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>491</width>
+     <height>76</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="authorLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>591</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Author:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="addInput">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>371</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="doneButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>260</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>160</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background: url(&quot;:/new/prefix1/loginButtonImage.png&quot;) repeat-x; 
+width: 200px;  
+padding:10px 0;  
+color: palette(shadow); 
+text-align:center; 
+border:1px solid #608925;  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 30px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}
+
+QPushButton:hover {
+border-color:#49671d;  
+}
+
+
+QPushButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+}  </string>
+   </property>
+   <property name="text">
+    <string>Save Edit</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
