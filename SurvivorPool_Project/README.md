@@ -1,0 +1,1 @@
+ Read Readme.txt for instructions on how to run the blackberry and the desktop applications
