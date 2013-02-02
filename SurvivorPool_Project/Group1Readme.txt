@@ -1,15 +1,3 @@
-************************************************************************************
-
-                   Group 1 - Acceptance Testing - README.txt
-
-************************************************************************************
-
-
-
-
-
-
-
 
 *************************************************************************************
 Instruction Order and Notes
@@ -23,13 +11,6 @@ Instruction Order and Notes
 
 4)  If there are any IO errors, it is entirely due the SDcard card setup.
     
-
-
-
-
-
-
-
 
 
 
@@ -61,8 +42,6 @@ Running the BlackBerry Code
     text files in the "res" directory of the project into the "C:\SDCard\BlackBerry\" directory
 
 11. Run the simulator and the application should launch normally
-
-
 
 
 

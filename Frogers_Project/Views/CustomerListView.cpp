@@ -250,7 +250,7 @@ void CustomerListView::search(){
 
     QString search = ui->searchBar->text();
 
-    if(this->_controller.isInappropriate(search)){        
+    if(this->_controller.isInappropriate(search)){
           // Easter egg. search for curse words :)
           Phonon::MediaObject *file = new Phonon::MediaObject(this);
           Phonon::AudioOutput *audio = new Phonon::AudioOutput(Phonon::MusicCategory, this);
