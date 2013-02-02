@@ -1,2 +1,0 @@
-NUMROUNDS-------3
-NUMQS-------0
